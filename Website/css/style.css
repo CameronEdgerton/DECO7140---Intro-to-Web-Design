@@ -1,0 +1,452 @@
+
+@font-face {
+    font-family: "captureit";
+    src: url("../font/captureit.ttf");
+}
+
+h1, h2, a, body {
+    font-family: "captureit";
+    text-decoration: none;
+    font-weight: normal;
+    color: white;
+    text-transform: uppercase;
+}
+
+body {
+    background-color: #141414;
+    font-size: 12pt;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 30pt;
+    margin: 0;
+}
+
+h2 {
+    font-size: 12pt;
+    margin-top: 10px;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0 50px;
+    list-style: none;
+  }
+  
+.flex-item {
+    width: 400px;
+    max-width: 80%;
+    height: auto;
+}
+
+.flex-container.mini {
+    margin: 0;
+}
+
+.flex-container.mini .flex-menu {
+    width: 200px;
+}
+
+.black-text {
+    color: black
+}
+
+.flex-item.bigger {
+    padding: 37px 50px 50px 50px;
+    flex-grow:2;
+    background-color: white;
+}
+
+.flex-item.bigger.activity {
+    padding: 0px;
+    background-color: white;
+}
+
+.flex-item.bigger.black-text {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.flex-item.bigger.booking {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.nav-bar {
+    padding: 0 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-top: 50px;
+    justify-content: flex-start;
+}
+
+.home-menu {
+    justify-content: flex-end;
+    margin-top: 105px;
+
+}
+.home-menu a {
+    text-decoration: none;
+    text-align: center;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.home-menu a:hover {
+    color:#141414;
+    background-color: white;
+}
+
+.role-activity {
+    background-color: #cbcbcb;
+    border: black;
+    border-style: solid;
+    border-radius: 5px;
+}   
+
+.center {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.role-activity p {
+    padding-left: 10px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.role-activity img {
+    margin: 5px;
+    border: black;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    width: 90%;
+    height: auto;
+}
+
+.footer {
+    padding: 0 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+.footer a {
+    text-decoration: none;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.footer a:hover {
+    color:#141414;
+    background-color: white;
+}
+
+#banner {
+    max-width: 100%;
+    height: 250px;
+    background-image: url("../images/green-tree-forest-600px.jpg");
+}
+
+.about {
+    margin-top: 35px;
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+.about p {
+    padding-right: 20px;
+}
+
+.flex-item.details {
+    margin-right: 10px;
+}
+
+.flex-item.details p {
+    text-align: center;
+}
+
+.role-menu {
+    list-style: none;
+    text-align: center;
+}
+
+.role-menu li  {
+    padding: 20px;  
+    cursor: pointer;
+    font-size: 1.5em;  
+}
+
+.activity-menu {
+    list-style: none;
+}
+
+.flex-menu li {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    cursor: pointer;  
+}
+
+.hunter-menu li:hover, .hunter-menu li.selected {
+    color: red;
+}
+
+.gatherer-menu li:hover, .gatherer-menu li.selected {
+    color:green;
+}
+
+#hunter {
+    animation: red-change 1s infinite alternate;
+}
+
+#gatherer {
+    animation: green-change 1s infinite alternate;
+  }
+
+#hunter:hover, #hunter.selected {
+    color: red;
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#gatherer:hover, #gatherer.selected {
+    color: green;
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.flex-item.references {
+    width: 80%;
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+.reference-list {
+    list-style: none;
+    background-color: white;
+    color: black;
+    padding-right: 40px;
+    text-transform: none;
+    border-radius: 5px;
+}
+
+.reference-list li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.current {
+    background-color: white;
+    color: black;
+}
+
+.contact-list {
+    list-style: none;
+    background-color: white;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.contact-list li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.booking-form {
+    background-color: white;
+    color: black;
+    padding: 20px;
+
+}
+form label, form input, form button {
+    margin-bottom: 5px;
+    display: block;
+    width: 98%;
+}
+
+form input {
+    margin-bottom: 20px;
+}
+
+form button {
+    cursor: pointer;
+}
+
+.flex-item.quiz {
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+.flex-item h2 {
+    color: black;
+}
+
+.flex-item.bigger.black-text.window.quiz {
+    color: white;
+    background-color:#141414;
+
+}
+
+#quiz-start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#quiz-results {
+    display: none;
+}
+
+button {
+    font-family: "captureit";
+    background-color:white;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+button:hover {
+    background-color: green;
+}
+
+.cycle-slideshow { 
+    width: 100% 
+}
+
+.cycle-slideshow img { 
+    width: 100%; 
+    height: auto;
+    border-radius: 5px; 
+}
+
+.cycle-pager { 
+    text-align: center; 
+    width: 100%; 
+    z-index: 200; 
+    position: absolute; 
+    bottom: 10px; 
+}
+
+.cycle-pager span { 
+    font-size: 50pt;
+    display: inline-block; 
+    color: grey; 
+}
+
+.cycle-pager span.cycle-pager-active { 
+    color: lightskyblue;
+}
+
+.cycle-pager > * { 
+    cursor: pointer;
+}
+ 
+@keyframes red-change {
+    100%   {color: red;}
+}
+
+@keyframes green-change {
+    100%   {color: green;}
+}
+
+@media screen and (max-width: 1400px) {
+    .center {
+        flex-flow: column;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .flex-container.mini .flex-menu {
+        width: 100%;
+    }
+
+    .activity-menu {
+        column-count: 2;
+        padding: 0;
+    }
+
+    .footer {
+        justify-content: center;
+        padding: 0;
+    }    
+}
+
+@media screen and (max-width: 1020px) {
+    .nav-bar {
+        flex-flow: column wrap;
+    }
+
+    .home-menu {
+        margin-top: 10px;
+    }
+
+    #banner {
+        margin-top: 20px;
+    }
+
+    .role-menu {
+        padding-left: 0;
+    }
+
+    .role-menu li {
+        display: inline;
+        border-radius: 5px;
+        
+        padding: 10px;
+
+    }
+
+    .contact-list {
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .nav-bar {
+        padding: 0 50px;
+        display: block;
+    }
+
+    .nav-bar a {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .role-menu li {
+        font-size: 10pt;
+    }
+}
